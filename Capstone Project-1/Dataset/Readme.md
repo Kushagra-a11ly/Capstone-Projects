@@ -1,6 +1,6 @@
 Employee Attrition Dataset
-📌 Objective
 
+📌 Objective
 This dataset is designed to explore the factors that contribute to employee attrition. It helps address questions such as:
 How does travel frequency impact retention across departments?
 Does monthly income differ by education level when comparing employees who stay versus those who leave?
