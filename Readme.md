@@ -25,20 +25,20 @@ Each project follows an end-to-end data analytics workflow:
 4. Visualization & Dashboards – Using Excel, Power BI, Python (Matplotlib/Seaborn)*  
 5. Actionable Insights – Delivering data-driven recommendations  
 
-🛠 Tools & Technologies  
+🛠 Tools & Technologies
+
 - Python: Pandas, NumPy, Matplotlib, Seaborn  
 - SQL: Data querying and analysis  
 - Excel: Data cleaning, pivot tables, and charts  
 - Power BI: Interactive dashboards and BI reports  
-
 
  📂 Repository Structure
 
 capstone-project/ │ ├── project-1/ │   ├── data/          # Raw & processed datasets │   ├── notebooks/     # Jupyter notebooks for analysis │   ├── reports/       # Reports in PDF/Markdown │   └── visuals/       # Charts & dashboards │ ├── project-2/ │   ├── data/ │   ├── notebooks/ │   ├── reports/ │   └── visuals/ │ ├── README.md          # Project overview (this file) └── requirements.txt   # Python dependencies
 
 🎯 Why This Repository  
-- Highlights my problem-solving and analytical skills
 
+- Highlights my problem-solving and analytical skills
 - Demonstrates real-world data analytics workflows 
 - Serves as a portfolio hub for recruiters and collaborators  
 - Reflects my *passion for data-driven decision making  
