@@ -19,9 +19,9 @@ This folder contains all reports, summaries, and documentation generated during 
   - `Visualization.png`
   - `Final_Report_Presentation.pptx`
 
-## Guidelines
+ Guidelines
 1. Keep raw analysis in the Notebook folder, and only export key results here.
-2. Use the **Visualizations** folder for charts/plots and reference them in the report if needed.
+2. Use the Visualizations folder for charts/plots and reference them in the report if needed.
 3. Ensure the final report includes:
    - Problem statement
    - Data description
@@ -29,5 +29,3 @@ This folder contains all reports, summaries, and documentation generated during 
    - Key insights & trends
    - Recommendations or conclusions
 
----
-📌 *This folder is the main reference for project stakeholders.*
