@@ -14,9 +14,9 @@ This folder contains all reports, summaries, and documentation generated during 
 
  Naming Convention
 - Use clear and consistent names for files. Example:
-  - `EDA_Report_Jan2025.pdf`
+  - `EDA_Report.pdf`
   - `Sales_Analysis_Summary.md`
-  - `Visualization_Customer_Trends.png`
+  - `Visualization.png`
   - `Final_Report_Presentation.pptx`
 
 ## Guidelines
