@@ -19,11 +19,7 @@ Creating a structured report and a presentation deck summarizing key findings, i
 🛠️ Project Workflow
 How to Use This Project
 1. Clone the Repository
-git clone https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI.git
-cd customer-trends-data-analysis-SQL-Python-PowerBI
-
 2. Open the Jupyter Notebook
-
 Open Customer_Shopping_Behavior_Analysis.ipynb, which includes:
 1.Data import
 2.Exploratory data analysis
