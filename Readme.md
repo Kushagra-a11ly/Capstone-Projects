@@ -9,10 +9,6 @@
 - 📈 Skilled at data cleaning, EDA, visualization, and deriving actionable business insights.  
 - 🤝 Interested in collaborating on data projects and learning from industry experts.  
 
-📫 Let’s Connect: 
-LinkedIn: (www.linkedin.com/in/kushagra-mukund) | 
-[GitHub](https://github.com/) 
-
  📂 Repository Overview  
 This repository is a collection of my Data Analytics capstone projects, where I work on real-world datasets and apply industry-standard analytics techniques to generate business insights.  
 
