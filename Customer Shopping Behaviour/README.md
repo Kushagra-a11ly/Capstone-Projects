@@ -16,42 +16,29 @@ Power BI (Dashboard Visualisation)
 🛠 Tools Used
 
 Python (Pandas, NumPy, Matplotlib, Seaborn)
-
 SQL (PostgreSQL / MySQL / SQL Server)
-
 Power BI (Interactive dashboarding)
-
 Gamma (Auto-generated PPT report)
-
 GitHub (Version control & documentation)
 
 🧵 Steps Followed
+
 1️⃣ Load & Clean Data (Python)
-
 Imported dataset using Pandas
-
 Handled missing values and duplicates
-
 Standardised column formats
-
 Created new calculated fields for analysis
 
 2️⃣ Exploratory Data Analysis (Python)
-
 Studied distributions, trends, and patterns
-
 Analyzed demographics, product categories, and seasonality
-
 Created visualizations for behaviour and performance insights
 
 3️⃣ SQL Analysis (PostgreSQL/MySQL/SQL Server)
 
 Loaded cleaned dataset into SQL database
-
 Performed joins, aggregations, and segmentation queries
-
 Identified high-value customers, top categories, and revenue drivers
-
 Extracted business insights using SQL logic
 
 4️⃣ Power BI Dashboard
