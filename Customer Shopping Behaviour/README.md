@@ -1,4 +1,5 @@
 📊 Customer Shopping Behaviour – End-to-End Data Analytics Project
+
 📌 Overview
 
 This project demonstrates a complete, industry-style data analytics workflow. It includes loading and cleaning a dataset in Python, performing Exploratory Data Analysis (EDA), executing SQL queries for business insights, creating visual dashboards in Power BI, and preparing a final report and presentation.
@@ -10,11 +11,8 @@ The dataset contains customer demographics, purchase behaviour, product preferen
 It is used across:
 
 Python (Cleaning + EDA)
-
 SQL (Insight Generation)
-
 Power BI (Dashboard Visualisation)
-
 🛠 Tools Used
 
 Python (Pandas, NumPy, Matplotlib, Seaborn)
