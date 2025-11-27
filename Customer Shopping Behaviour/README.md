@@ -7,14 +7,14 @@ It covers every major stage of analytics—from data preparation and modeling to
 
 The goal of this project is to simulate a corporate-grade analytics environment and demonstrate the ability to turn raw customer data into meaningful business intelligence.
 This includes:
-1.Data Preparation, Modeling & EDA (Python)
-Cleaning, transforming, and exploring the dataset to prepare it for deeper analysis.
-2.Data Analysis (SQL)
-Simulating transactional scenarios and writing SQL queries to understand customer behavior, loyalty, segmentation, and purchase drivers.
-3.Visualization & Insight Generation (Power BI)
-Building an interactive dashboard that highlights customer trends, behavioral patterns, and business insights.
-4.Reporting & Presentation
-Creating a structured report and a presentation deck summarizing key findings, insights, and recommendations for stakeholders.
+ 1.Data Preparation, Modeling & EDA (Python)
+  Cleaning, transforming, and exploring the dataset to prepare it for deeper analysis.
+ 2.Data Analysis (SQL)
+  Simulating transactional scenarios and writing SQL queries to understand customer behavior, loyalty, segmentation, and purchase drivers.
+ 3.Visualization & Insight Generation (Power BI)
+  Building an interactive dashboard that highlights customer trends, behavioral patterns, and business insights.
+ 4.Reporting & Presentation
+  Creating a structured report and a presentation deck summarizing key findings, insights, and recommendations for stakeholders.
 
 🛠️ Project Workflow
 How to Use This Project
