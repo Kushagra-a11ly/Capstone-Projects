@@ -1,73 +1,91 @@
-Dataset Overview
+📑 Table of Contents
+Project Overview
+Skills Demonstrated
+Tech Stack
+Project Structure
+Dataset Description
+Key Columns
 
-1.This folder contains the dataset used for the Customer Shopping Behaviour Analysis capstone project. 
-2.The dataset provides a comprehensive view of customer demographics, purchase actions, product preferences, and behavioral patterns across a variety of shopping contexts. 
-3.It is specifically designed to support end-to-end data analytics tasks and is utilized in multiple stages of the project, including:
-  A.Python Exploratory Data Analysis (EDA)
-  B.SQL-based business insights and analytical queries
-  C.Power BI dashboard creation and visualization
-By working with this dataset, analysts can replicate industry-level data workflows, gain exposure to real-world decision-making scenarios, and develop insights that reflect contemporary retail and e-commerce operations.
+What This Project Demonstrates
+How to Use This Repository
+📘 Project Overview
+This project represents a complete end-to-end data analytics workflow, designed to replicate real industry processes followed by data analysts and business intelligence professionals. It covers the full lifecycle of analytics—from raw data collection to cleaning, exploration, SQL insights, and final dashboard visualization.
+The goal is to understand customer shopping behaviour, purchase patterns, seasonal demand, product preferences, and loyalty patterns using a structured retail dataset.
+This project demonstrates not just technical execution but also the ability to think strategically from a business perspective, making it a strong addition to any analytics portfolio.
 
-Files Included
-1.README.md
-A documentation file describing the dataset, its structure, and its fields.
-This ensures clarity and improves usability for contributors, collaborators, and hiring managers reviewing the project.
-2.customer_shopping_data.csv
-A structured dataset containing customer-level transaction records.
-It includes demographic attributes, purchase metadata, product-related features, and behavioral indicators that enable a wide range of analytical tasks—from descriptive analysis to predictive modeling.
+🧠 Skills Demonstrated
+Data cleaning & preprocessing
+Exploratory Data Analysis (EDA)
+SQL analytical querying
+Business insight generation
+Data modeling
+Power BI visualization & dashboard design
+Customer segmentation strategies
+Reporting & storytelling
 
-Key Columns 
-1.Customer ID – Unique identifier assigned to each customer for tracking purchase history.
-2.Age – Age of the customer, helpful for demographic segmentation.
-3.Gender – Customer gender, used for segment-based behavior analysis.
-4.Item Purchased – Specific product bought during the transaction.
-5.Category – Broad classification of the purchased item, such as Apparel, Electronics, Accessories, etc.
-6.Purchase Amount (USD) – Monetary value of the customer’s purchase.
-7.Location – City or geographical area where the transaction occurred.
-8.Size – Applicable to clothing/apparel purchases (S, M, L, XL, etc.).
-9.Color – Color variant of the product purchased.
-10.Season – The season during which the purchase was made—useful for trend and seasonal demand analysis.
-11.Review Rating – Product rating provided by the customer (1–5 scale).
-12.Subscription Status – Indicates whether the customer is part of a membership/loyalty scheme.
-13.Shipping Type – Delivery method selected for the order (Standard, Express, Prime, etc.).
-14.Discount Applied – Whether a discount was applied to the transaction (Yes/No).
-15.Promo Code Used – Details of the promotional code (if any) applied at checkout.
-16.Previous Purchases – Count of all past purchases made by the customer.
-17.Payment Method – Payment mode used (Credit Card, Debit Card, Cash, UPI, Wallet, etc.).
-18.Frequency of Purchases – Average purchase frequency or days between purchases. Useful for RFM analysis and loyalty predictions.
+🛠️ Tech Stack
 
-Purpose of This Dataset
-This dataset is tailored for hands-on analytics and supports:
-A.Data Cleaning & Preprocessing
-Handling missing values, correcting inconsistencies, data type conversions, and preparing clean tables for use in Python, SQL, and Power BI.
-B.Exploratory Data Analysis (EDA)
-Uncovering trends, anomalies, customer patterns, product preferences, and overall retail behavior.
-C.SQL-Based Business Insights
-Running meaningful, real-world analytical queries such as:
-D.Top categories and products
-Customer loyalty and segmentation
+Python: Pandas, NumPy, Matplotlib, Seaborn
+SQL: MySQL / PostgreSQL
+Power BI: DAX, interactive visuals, slicers
+GitHub: Version control & documentation
+
+📊 Dataset Description
+This dataset contains detailed information about customer demographics, product preferences, transaction patterns, loyalty behaviour, and purchase history.
+It is used across all three parts of the project:
+Python (EDA)
+SQL (business insights)
+Power BI (interactive dashboarding)
+
+🧾 Key Columns
+Customer ID – Unique identifier for each customer
+Age – Age of the customer
+Gender – Customer gender
+Item Purchased – Product bought
+Category – Apparel, Electronics, Accessories, etc.
+Purchase Amount (USD) – Total amount spent
+Location – City/region of purchase
+Size – S, M, L, XL (apparel-specific)
+Color – Product color
+Season – Winter/Summer/Spring etc.
+Review Rating – 1–5 rating
+Subscription Status – Loyalty program membership
+Shipping Type – Standard/Express/Prime
+Discount Applied – Yes/No
+Promo Code Used – Applied promo code details
+Previous Purchases – Count of historical purchases
+Payment Method – UPI, Card, Cash, Wallet
+Frequency of Purchases – Days between purchases
+
+🎯 What This Project Demonstrates
+1️⃣ Python EDA
+Distribution analysis
+Outlier detection
+Correlation studies
+Seasonal trend analysis
+Customer segmentation
+Product performance evaluation
+
+2️⃣ SQL Analysis
+
+Category-wise revenue insights
 High-value customers
-Seasonal purchase patterns
 Discount effectiveness
-E. Power BI Dashboarding
-Creating interactive and executive-level dashboards showcasing:
-Sales trends
-Customer segments
-Purchase patterns
-Product performance
-Behavioral metrics
-F.End-to-End Portfolio Project Demonstration
-This dataset helps build a complete analytics pipeline that mirrors industry workflows and enhances your portfolio for data roles.
+Seasonal demand trends
+Region-wise performance
+Customer retention patterns
 
-Usage
-This dataset is intended purely for learning, analysis, and portfolio-building within the scope of this capstone project.
-It can be used to practice:
-Data engineering fundamentals
-SQL querying
-Data visualization
-Analytical storytelling
-Dashboard creation
+3️⃣ Power BI Dashboard
+KPIs: Total Sales, Avg Rating, Repeat Customers
+Category insights
+Demographic breakdown
+Purchase behaviour patterns
+Filters: Season, Gender, Category, Location
 
-Business problem solving
+🚀 How to Use This Repository
 
-It is NOT intended for commercial use.
+Download the dataset from /dataset
+Run the EDA notebook in /python_eda
+Execute SQL scripts in /sql_analysis
+Open the Power BI report in /powerbi_dashboard
+Refer to this README for understanding workflow & insights
