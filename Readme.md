@@ -100,6 +100,4 @@ This repository serves three purposes:
 
 *If you find this work useful or want to collaborate, feel free to open an issue or reach out directly.*
 
-![Profile Views](https://komarev.com/ghpvc/?username=Kushagra-a11ly&style=flat-square)
-
 </div>
