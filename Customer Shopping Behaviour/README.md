@@ -1,4 +1,4 @@
-📊 Customer Shopping Behaviour – End-to-End Data Analytics Project
+## 📊 Customer Shopping Behaviour – End-to-End Data Analytics Project
 
 A small, relational-style retail sales dataset built in Excel, structured as a **star schema** — one fact table (`Orders`) surrounded by three dimension tables (`Customers`, `Products`, `Dates`). It's designed for practicing Excel formulas (VLOOKUP/INDEX-MATCH, PivotTables), Power BI data modeling, or SQL-style joins.
 
