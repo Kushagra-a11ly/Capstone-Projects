@@ -1,79 +1,114 @@
 📊 Customer Shopping Behaviour – End-to-End Data Analytics Project
 
-📌 Overview
+A small, relational-style retail sales dataset built in Excel, structured as a **star schema** — one fact table (`Orders`) surrounded by three dimension tables (`Customers`, `Products`, `Dates`). It's designed for practicing Excel formulas (VLOOKUP/INDEX-MATCH, PivotTables), Power BI data modeling, or SQL-style joins.
 
-This project demonstrates a complete, industry-style data analytics workflow. 
-It includes loading and cleaning a dataset in Python, performing Exploratory Data Analysis (EDA), executing SQL queries for business insights, creating visual dashboards in Power BI, and preparing a final report and presentation.
-The goal is to understand customer shopping behaviour and derive insights that support real-world business decisions.
+## Schema Overview
 
-📁 Dataset
+```
+Customers ──┐
+            │
+Products ───┼──> Orders (fact table)
+            │
+Dates ──────┘
+```
 
-The dataset contains customer demographics, purchase behaviour, product preferences, transaction details, and engagement metrics.
-It is used across:
+Each row in `Orders` links out to `Customers`, `Products`, and `Dates` via shared key columns, so the four sheets can be joined into a single analytical view.
 
-Python (Cleaning + EDA)
-SQL (Insight Generation)
-Power BI (Dashboard Visualisation)
+---
 
-🛠 Tools Used
+## Sheet Details
 
-Python (Pandas, NumPy, Matplotlib, Seaborn)
-SQL (PostgreSQL / MySQL / SQL Server)
-Power BI (Interactive dashboarding)
-Gamma (Auto-generated PPT report)
-GitHub (Version control & documentation)
+### 1. `Customers`
+Dimension table describing who placed each order.
 
-🧵 Steps Followed
+| Column | Type | Description |
+|---|---|---|
+| `CustomerID` | Text (PK) | Unique customer identifier, e.g. `C001` |
+| `CustomerName` | Text | Full name of the customer |
+| `City` | Text | Customer's city (Pune, Mumbai, Nashik, Nagpur, Thane) |
+| `Segment` | Text | Customer segment — `Consumer`, `Corporate`, or `Home Office` |
 
-1️⃣ Load & Clean Data (Python)
-Imported dataset using Pandas
-Handled missing values and duplicates
-Standardised column formats
-Created new calculated fields for analysis
+**Rows:** 8 customers.
 
-2️⃣ Exploratory Data Analysis (Python)
-Studied distributions, trends, and patterns
-Analyzed demographics, product categories, and seasonality
-Created visualizations for behaviour and performance insights
+### 2. `Products`
+Dimension table describing what was sold.
 
-3️⃣ SQL Analysis (PostgreSQL/MySQL/SQL Server)
+| Column | Type | Description |
+|---|---|---|
+| `ProductID` | Text (PK) | Unique product identifier, e.g. `P001` |
+| `ProductName` | Text | Product name (Laptop, Mouse, Office Chair, etc.) |
+| `Category` | Text | High-level category — `Electronics` or `Furniture` |
+| `SubCategory` | Text | More granular grouping (Computers, Accessories, Chairs, Tables, Storage, Office Equipment) |
+| `UnitPrice` | Number (₹) | Standard unit price of the product |
 
-Loaded cleaned dataset into SQL database
-Performed joins, aggregations, and segmentation queries
-Identified high-value customers, top categories, and revenue drivers
-Extracted business insights using SQL logic
+**Rows:** 8 products across 2 categories.
 
-4️⃣ Power BI Dashboard
+### 3. `Orders`
+The **fact table** — one row per order line.
 
-Built an interactive dashboard with slicers and KPIs
-Added visuals for sales trends, demographics, loyalty behaviour, and product analysis
-Enabled dynamic filtering for user-driven insights
+| Column | Type | Description |
+|---|---|---|
+| `OrderID` | Text (PK) | Unique order identifier, e.g. `O001` |
+| `OrderDate` | Date | Date the order was placed |
+| `CustomerID` | Text (FK → Customers) | Links to the customer who placed the order |
+| `ProductID` | Text (FK → Products) | Links to the product ordered |
+| `Quantity` | Number | Units ordered |
+| `Sales` | Number (₹) | Total sale value for the order line |
+| `PaymentMode` | Text | `UPI`, `Card`, or `Cash` |
 
-5️⃣ Final Reporting (Gamma)
+**Rows:** 16 orders, dated between 5-Jan-2026 and 21-Apr-2026.
 
-Summarized insights in a concise, executive-level slide deck
-Included KPIs, charts, and data-driven recommendations
+### 4. `Dates`
+Dimension/calendar table, one row per distinct order date, useful for time-intelligence formulas and Power BI date tables.
 
-📈 Dashboard
+| Column | Type | Description |
+|---|---|---|
+| `Date` | Date | Calendar date (matches an `OrderDate` in `Orders`) |
+| `Year` | Number | Calendar year (2026) |
+| `Month` | Text | Month name (January–April) |
+| `MonthNo` | Number | Month number (1–4) |
+| `Quarter` | Text | Fiscal/calendar quarter (`Q1` or `Q2`) |
 
-The Power BI dashboard includes:
-Total Sales, Average Rating, Repeat Customers
-Category-wise and Season-wise Insights
-Purchase Trends, Regional Performance
-Customer Segmentation (Age, Gender, Loyalty)
-Filters for dynamic exploration
+**Rows:** 16 dates covering Q1 and Q2 2026.
 
-🏁 Results
+---
 
-Identified key customer segments and high-performing product categories
-Analyzed purchase seasonality and discount effectiveness
-Discovered customer loyalty patterns and behaviour trends
-Produced a complete, end-to-end, real-world analytics workflow
+## Relationships
 
-▶️ How to Run
+| From | Key | To |
+|---|---|---|
+| `Orders.CustomerID` | → | `Customers.CustomerID` |
+| `Orders.ProductID` | → | `Products.ProductID` |
+| `Orders.OrderDate` | → | `Dates.Date` |
 
-Open the dataset folder and download the CSV.
-Run the Python EDA notebook to clean and explore the data.
-Load the cleaned dataset into SQL and execute the SQL queries.
+These are one-to-many relationships (one customer/product/date can have many orders), which makes this dataset ready to load directly into Power BI or Excel's Data Model without further cleanup.
+
+---
+
+## At a Glance
+
+- **Total orders:** 16
+- **Date range:** 5-Jan-2026 to 21-Apr-2026 (Q1–Q2 2026)
+- **Customers:** 8, spread across Pune, Mumbai, Nashik, Nagpur, and Thane
+- **Products:** 8, across Electronics (Computers, Accessories, Office Equipment) and Furniture (Chairs, Tables, Storage)
+- **Payment modes:** UPI, Card, Cash
+- **Highest single sale:** ₹55,000 (Laptop, appears in 3 separate orders)
+
+---
+
+## Suggested Uses
+
+- **Excel practice:** VLOOKUP/INDEX-MATCH to pull `CustomerName` or `ProductName` into the `Orders` sheet; PivotTables to summarize sales by city, category, or month.
+- **Power BI / data modeling:** Import all four sheets and build relationships as described above to create a working star schema.
+- **SQL practice:** Treat each sheet as a table and practice `JOIN`, `GROUP BY`, and aggregate queries (total sales by segment, by category, by payment mode, etc.).
+- **Dashboarding:** Build a sales-by-month, sales-by-category, or top-customers dashboard using the relationships above.
+
+---
+
+## Notes
+
+- All monetary values are in Indian Rupees (₹).
+- `Sales` in the `Orders` sheet is an exact match of `Quantity × UnitPrice` for every order — verified across all 16 rows, with no discounts or discrepancies.
+- The `Dates` sheet duplicates each order date from `Orders`; deduplicate it first if you need a true one-row-per-calendar-day date table.
 Open the Power BI file to view the dashboard.
 Review the Gamma-generated PPT for final insights and recommendations.
